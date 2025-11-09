@@ -44,12 +44,7 @@ export default function parseTar(bytes: Uint8Array) {
     const fileDataEnd = offset + size;
     const uint8Array = bytes.slice(fileDataStart, fileDataEnd); // Uint8Array
 
-    entries.push({
-      name,
-      size,
-      type: typeflag,
-      uint8Array,
-    });
+    entries.push({ name, size, type: typeflag, uint8Array });
 
     // advance offset to next header (round up to 512)
     const padded = Math.ceil(size / blockSize) * blockSize;

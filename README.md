@@ -1,3 +1,3 @@
 # Demo:
 
-http://akiratoma.github.io/moodle-file-restore
+https://akiratoma.github.io/moodle-file-restore
